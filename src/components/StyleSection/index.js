@@ -4,6 +4,7 @@ import Image from "next/image";
 import styleImg from "../../assets/svgs/style.svg";
 import ImageSwiper from "../common/ImageSwiper";
 import rightArrow from "../../assets/svgs/black-right-arrow.svg";
+import whiterightArrow from "../../assets/svgs/right-arrow.svg";
 
 export default function StyleSection() {
   return (
@@ -35,6 +36,28 @@ export default function StyleSection() {
         <div className={styles.btn_text_container}>
           <div className={styles.btn_text}>Get Started</div>
           <Image src={rightArrow} alt="right-arrow" width={16} height={16} />
+        </div>
+      </div>
+
+      <div className={styles.question_container}>
+        <div className={styles.question_header}>
+          Why the OneSync Card is the Best Choice for you?
+        </div>
+        <div className={styles.question_subheader}>
+          You can create a Credit Card that fits all your needs on your own.
+          Gone are the days when you had choose from premade credit cards with
+          features that you did not need. <br />
+          With the OneSync card you can save on all the things that you love to
+          do with a unique personal touch
+        </div>
+        <div className={styles.btn_text_container}>
+          <div className={styles.btn_question_text}>Get Started</div>
+          <Image
+            src={whiterightArrow}
+            alt="right-arrow"
+            width={16}
+            height={16}
+          />
         </div>
       </div>
     </>

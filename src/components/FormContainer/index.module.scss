@@ -123,6 +123,7 @@ $high: 980px;
   gap: 8px;
   cursor: pointer;
   margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .btn_text {
@@ -133,5 +134,5 @@ $high: 980px;
 }
 
 .btn_text:hover {
-  color: $darkpurple-color;
+  color: $red-color;
 }
