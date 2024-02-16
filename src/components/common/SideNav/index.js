@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import ReactDOM from "react-dom";
 import styles from "./index.module.scss";
 
 export default function SideNav({
@@ -10,7 +9,7 @@ export default function SideNav({
   onClose,
   showCloseButton = false,
 }) {
-  return ReactDOM.createPortal(
+  return (
     <div className={show ? styles.wrapper_active : styles.wrapper}>
       <div
         className={show ? styles.backdrop_active : styles.backdrop}
@@ -24,7 +23,6 @@ export default function SideNav({
         )}
         {children}
       </div>
-    </div>,
-    document.body
+    </div>
   );
 }
