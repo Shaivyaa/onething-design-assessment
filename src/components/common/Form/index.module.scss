@@ -1,0 +1,41 @@
+$gray-color: #888484;
+$white-color: #fff;
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  align-items: center;
+  width: 100%;
+
+  input {
+    width: 100%;
+    max-width: 400px;
+    height: 54px;
+    box-shadow: 0px 10px 20px 0px #0000001A;
+    padding: 16px 0 16px 16px;
+    color: $gray-color;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 500;
+    opacity: 80%;
+    background-color: $white-color;
+  }
+
+  :focus {
+    border-width: 0;
+    opacity: 1;
+  }
+
+  ::placeholder {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  :disabled {
+    opacity: 60%;
+    cursor: not-allowed;
+  }
+}

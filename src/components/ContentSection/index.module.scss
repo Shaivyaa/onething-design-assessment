@@ -1,0 +1,114 @@
+$black-bg-color: #000000;
+$black-color: #000000;
+$red-bg-color: #F2707C;
+$red-color: #F2707C;
+$white-bg-color: #fff;
+$white-color: #fff;
+$purple-bg-color: #8E7CB5;
+$darkpurple-color: #4E3F6B;
+$medium: 580px;
+$high: 980px;
+
+.content_section_wrapper {
+  padding: 93px 108px;
+  background-color: $purple-bg-color;
+
+  @media screen and (max-width: $high) {
+    padding: 32px 24px 48px 24px;
+  }
+
+  @media screen and (max-width: $medium) {
+    padding: 32px 24px 48px 24px;
+  }
+}
+
+.content_section_container {
+  width: 100%;
+  max-width: 1224px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: $high) {
+    flex-direction: column;
+    justify-content: center;
+    max-width: fit-content;
+    gap: 16px;
+  }
+
+  @media screen and (max-width: $medium) {
+    flex-direction: column;
+    max-width: none;
+    gap: 16px;
+  }
+}
+
+.content_section_header {
+  // width: 100%;
+  // max-width: 496px;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 56px;
+  color: $white-color;
+
+  @media screen and (max-width: $high) {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  @media screen and (max-width: $medium) {
+    font-size: 24px;
+    line-height: 34px;
+  }
+}
+
+.content_section_description {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 462px;
+
+  @media screen and (max-width: $medium) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (max-width: $medium) {
+    display: none;
+  }
+}
+
+.text {
+  color: $white-color;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.btn_text_container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+
+}
+
+.btn_text {
+  color: $white-color;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: underline;
+
+  &:hover {
+    color: $darkpurple-color;
+  }
+}
+
+.dropdown {
+  display: none;
+
+  @media screen and (max-width: $medium) {
+    display: contents;
+  }
+}

@@ -1,0 +1,144 @@
+$black-bg-color: #000000;
+$black-color: #000000;
+$red-bg-color: #F2707C;
+$red-color: #F2707C;
+$white-bg-color: #fff;
+$white-color: #fff;
+$pink-bg-color: #FFE4E7;
+$purple-bg-color: #8E7CB5;
+$darkpurple-color: #4E3F6B;
+$medium: 580px;
+$high: 980px;
+
+.accordian_wrapper {
+  padding: 60px 0 80px 0;
+
+  @media screen and (max-width: $medium) {
+    padding: 32px 24px;
+  }
+}
+
+.accordian_container {
+  width: 100%;
+  max-width: 818px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  @media screen and (max-width: $medium) {
+    gap: 16px;
+  }
+}
+
+.accordian_header {
+  font-size: 32px;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+
+  @media screen and (max-width: $medium) {
+    text-align: left;
+  }
+}
+
+.accordion {
+  max-width: 808px;
+  overflow: hidden;
+}
+
+.accordion__label {
+  padding: 32px 16px 16px 0;
+}
+
+.accordion__content {
+  padding-bottom: 16px;
+}
+
+.accordion__label {
+  display: block;
+  color: #F2707C;
+  font-weight: 500;
+  font-size: 20px;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.1s;
+}
+
+.accordion__label:hover {
+  background-color: rgba(239, 234, 234, 0.1);
+}
+
+.accordion__content {
+  background: white;
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  transform: scaleY(0);
+  max-height: 0;
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+  transform-origin: top;
+}
+
+.accordion__input {
+  display: none;
+}
+
+
+.accordion__input {
+  &:checked~.accordion__content {
+    transform: scaleY(1);
+  }
+}
+
+.border {
+  border-bottom: 1px solid#00000061;
+}
+
+
+.accordion__input {
+  &:checked {
+    + {
+      .accordion__label {
+        + {
+          .accordion__content {
+            max-height: 1000px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.accordion__label {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+
+  &::after {
+    content: "\276F";
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    transform: rotate(90deg);
+    transition: all 0.35s;
+  }
+}
+
+.accordion {
+  input {
+    &:checked {
+      + {
+        .accordion__label {
+          &::after {
+            transform: rotate(-90deg);
+          }
+        }
+      }
+    }
+  }
+}

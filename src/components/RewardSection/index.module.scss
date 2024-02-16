@@ -1,0 +1,105 @@
+$black-bg-color: #000000;
+$black-color: #000000;
+$red-bg-color: #F2707C;
+$red-color: #F2707C;
+$white-bg-color: #fff;
+$white-color: #fff;
+$pink-bg-color: #FFE4E7;
+$purple-bg-color: #8E7CB5;
+$darkpurple-color: #4E3F6B;
+$medium: 580px;
+$high: 980px;
+
+.reward_section_wrapper {
+  padding: 64px 108px;
+  background-color: $pink-bg-color;
+
+  @media screen and (max-width: $medium) {
+    margin: 48px 24px;
+    padding: 30px 30px;
+  }
+}
+
+.reward_section_container {
+  width: 100%;
+  max-width: 1224px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: $medium) {
+    flex-direction: column-reverse;
+  }
+}
+
+.reward_section_details {
+  width: 100%;
+  max-width: 496px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @media screen and (max-width: $medium) {
+    display: none;
+  }
+}
+
+.reward_section_header {
+  font-size: 40px;
+  font-weight: 500;
+  color: $black-color;
+}
+
+.reward_section_subheader {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  color: $black-color;
+}
+
+.reward_section_swiper {
+  width: 100%;
+  max-width: 600px;
+}
+
+.msite_reward_form {
+  display: none;
+
+  @media screen and (max-width: $medium) {
+    display: block;
+    padding: 16px 24px;
+  }
+}
+
+.msite_header {
+  font-size: 18px;
+  font-weight: 500;
+  color: $black-color;
+  margin-top: 16px;
+}
+
+.msite_subheader {
+  font-size: 16px;
+  font-weight: 400;
+  color: $black-color;
+  margin-top: 16px;
+}
+
+.btn_text_container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  margin-top: 16px;
+}
+
+.btn_text {
+  color: $black-color;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.btn_text:hover {
+  color: $darkpurple-color;
+}

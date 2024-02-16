@@ -1,0 +1,137 @@
+$black-bg-color: #000000;
+$black-color: #000000;
+$red-bg-color: #F2707C;
+$red-color: #F2707C;
+$white-bg-color: #fff;
+$white-color: #fff;
+$lightblue-bg-color: #BFE1FF;
+$purple-bg-color: #8E7CB5;
+$darkpurple-color: #4E3F6B;
+$medium: 580px;
+$high: 980px;
+
+.form_wrapper {
+  width: 100%;
+
+  @media screen and (max-width: $medium) {
+    padding: 32px 24px;
+  }
+}
+
+.form_container {
+  display: flex;
+  width: 100%;
+
+  @media screen and (max-width: $high) {
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: $medium) {
+    display: none;
+  }
+
+}
+
+.form_details {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $lightblue-bg-color;
+  padding: 64px 0;
+
+  @media screen and (max-width: $high) {
+    width: 100%;
+  }
+}
+
+.form_description {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $white-bg-color;
+
+  @media screen and (max-width: $high) {
+    width: 100%;
+  }
+}
+
+.form_content_details {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 394px;
+
+  @media screen and (max-width: $high) {
+    margin: 0 auto;
+  }
+}
+
+.form_header {
+  font-size: 40px;
+  font-weight: 500;
+  color: $black-color;
+}
+
+.form_subheader {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  color: $black-color;
+}
+
+.msite_form_container {
+  display: none;
+
+  @media screen and (max-width: $medium) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.msite_form_header {
+  font-size: 24px;
+  font-weight: 500;
+  color: $black-color;
+}
+
+.msite_form_bg {
+  margin-top: 32px;
+  width: 100%;
+  height: auto;
+}
+
+.msite_header {
+  font-size: 18px;
+  font-weight: 500;
+  color: $black-color;
+  margin-top: 16px;
+}
+
+.msite_subheader {
+  font-size: 16px;
+  font-weight: 400;
+  color: $black-color;
+  margin-top: 16px;
+}
+
+.btn_text_container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  margin-top: 16px;
+}
+
+.btn_text {
+  color: $black-color;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.btn_text:hover {
+  color: $darkpurple-color;
+}
