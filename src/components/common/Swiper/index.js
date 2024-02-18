@@ -9,6 +9,7 @@ import { Autoplay, EffectCoverflow, FreeMode } from "swiper/modules";
 import Image from "next/image";
 import swiperImg from "../../../assets/images/swiper-img.png";
 import swiperNew from "../../../assets/images/swiper-new.png";
+import movieImg from "../../../assets/svgs/movie.svg";
 
 export default function Swipeer() {
   return (
@@ -34,49 +35,59 @@ export default function Swipeer() {
         }}
       >
         <SwiperSlide>
-          <Image
-            className={styles.swiper_img}
-            src={swiperImg}
-            alt="swiper-img"
-            height={400}
-            width={350}
-          />
+          <div className={styles.card}>
+            <div className={styles.card__date}>
+              <Image src={movieImg} alt="" height={54} width={54} />
+              <div className={styles.container_swiper}>
+                <span className={styles.date}>Buy 1 Get 1</span>
+                <span className={styles.date}>Movie Tickets</span>
+              </div>
+            </div>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <Image
-            className={styles.swiper_img}
-            src={swiperNew}
-            alt="swiper-img"
-            height={400}
-            width={350}
-          />
+          <div className={styles.card}>
+            <div className={styles.card__date}>
+              <Image src={movieImg} alt="" height={54} width={54} />
+              <div className={styles.container_swiper}>
+                <span className={styles.date}>Buy 1 Get 1</span>
+                <span className={styles.date}>Movie Tickets</span>
+              </div>
+            </div>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <Image
-            className={styles.swiper_img}
-            src={swiperImg}
-            alt="swiper-img"
-            height={400}
-            width={350}
-          />
+          <div className={styles.card}>
+            <div className={styles.card__date}>
+              <Image src={movieImg} alt="" height={54} width={54} />
+              <div className={styles.container_swiper}>
+                <span className={styles.date}>Buy 1 Get 1</span>
+                <span className={styles.date}>Movie Tickets</span>
+              </div>
+            </div>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <Image
-            className={styles.swiper_img}
-            src={swiperNew}
-            alt="swiper-img"
-            height={400}
-            width={350}
-          />
+          <div className={styles.card}>
+            <div className={styles.card__date}>
+              <Image src={movieImg} alt="" height={54} width={54} />
+              <div className={styles.container_swiper}>
+                <span className={styles.date}>Buy 1 Get 1</span>
+                <span className={styles.date}>Movie Tickets</span>
+              </div>
+            </div>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <Image
-            className={styles.swiper_img}
-            src={swiperImg}
-            alt="swiper-img"
-            height={400}
-            width={350}
-          />
+          <div className={styles.card}>
+            <div className={styles.card__date}>
+              <Image src={movieImg} alt="" height={54} width={54} />
+              <div className={styles.container_swiper}>
+                <span className={styles.date}>Buy 1 Get 1</span>
+                <span className={styles.date}>Movie Tickets</span>
+              </div>
+            </div>
+          </div>
         </SwiperSlide>
       </Swiper>
     </>
