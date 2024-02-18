@@ -37,9 +37,11 @@ export default function ImageSwiper() {
           <div className="card">
             <div className="card__side card__side_front">
               <div className="flex__1">
-                <p className="card__side__name-bank">bank</p>
                 <div className="card__side__chip"></div>
-                <p className="card__side__name-person">PAVLO MATVIIENKO</p>
+                <div className="card__side__number_front">
+                  2222 4545 5255 5555
+                </div>
+                <div className="card__side__name-person">PAVLO MATVIIENKO</div>
               </div>
             </div>
             <div className="card__side card__side_back">
@@ -47,18 +49,12 @@ export default function ImageSwiper() {
               <p className="card__side__number">XXXX XXXX XXXX XXXX</p>
               <div className="flex__2">
                 <p className="card__side__other-numbers card__side__other-numbers_1">
-                  XX/XX
+                  MM/YY
                 </p>
                 <p className="card__side__other-numbers card__side__other-numbers_2">
                   XXX
                 </p>
-
-                <div className="card__side__debit">debit</div>
               </div>
-              <p className="card__side__other-info">
-                BANK.UA | 0 800 205 205 |. ЛІЦЕНЗІЯ НБУ №92 ВІД 20.01.1994 | PCE
-                PC100650 WORLD DEBIT
-              </p>
             </div>
           </div>
         </SwiperSlide>
@@ -66,9 +62,11 @@ export default function ImageSwiper() {
           <div className="card">
             <div className="card__side card__side_front_red">
               <div className="flex__1">
-                <p className="card__side__name-bank">Bank</p>
                 <div className="card__side__chip"></div>
-                <p className="card__side__name-person">PAVLO MATVIIENKO</p>
+                <div className="card__side__number_front">
+                  2222 4545 5255 5555
+                </div>
+                <div className="card__side__name-person">PAVLO MATVIIENKO</div>
               </div>
             </div>
             <div className="card__side card__side_back_red">
@@ -76,18 +74,12 @@ export default function ImageSwiper() {
               <p className="card__side__number">XXXX XXXX XXXX XXXX</p>
               <div className="flex__2">
                 <p className="card__side__other-numbers card__side__other-numbers_1">
-                  XX/XX
+                  MM/YY
                 </p>
                 <p className="card__side__other-numbers card__side__other-numbers_2">
                   XXX
                 </p>
-
-                <div className="card__side__debit">debit</div>
               </div>
-              <p className="card__side__other-info">
-                BANK.UA | 0 800 205 205 |. ЛІЦЕНЗІЯ НБУ №92 ВІД 20.01.1994 | PCE
-                PC100650 WORLD DEBIT
-              </p>
             </div>
           </div>
         </SwiperSlide>
@@ -95,9 +87,11 @@ export default function ImageSwiper() {
           <div className="card">
             <div className="card__side card__side_front">
               <div className="flex__1">
-                <p className="card__side__name-bank">Bank</p>
                 <div className="card__side__chip"></div>
-                <p className="card__side__name-person">PAVLO MATVIIENKO</p>
+                <div className="card__side__number_front">
+                  2222 4545 5255 5555
+                </div>
+                <div className="card__side__name-person">PAVLO MATVIIENKO</div>
               </div>
             </div>
             <div className="card__side card__side_back">
@@ -105,18 +99,12 @@ export default function ImageSwiper() {
               <p className="card__side__number">XXXX XXXX XXXX XXXX</p>
               <div className="flex__2">
                 <p className="card__side__other-numbers card__side__other-numbers_1">
-                  XX/XX
+                  MM/YY
                 </p>
                 <p className="card__side__other-numbers card__side__other-numbers_2">
                   XXX
                 </p>
-
-                <div className="card__side__debit">debit</div>
               </div>
-              <p className="card__side__other-info">
-                BANK.UA | 0 800 205 205 |. ЛІЦЕНЗІЯ НБУ №92 ВІД 20.01.1994 | PCE
-                PC100650 WORLD DEBIT
-              </p>
             </div>
           </div>
         </SwiperSlide>
@@ -124,9 +112,11 @@ export default function ImageSwiper() {
           <div className="card">
             <div className="card__side card__side_front_red">
               <div className="flex__1">
-                <p className="card__side__name-bank">Bank</p>
                 <div className="card__side__chip"></div>
-                <p className="card__side__name-person">PAVLO MATVIIENKO</p>
+                <div className="card__side__number_front">
+                  2222 4545 5255 5555
+                </div>
+                <div className="card__side__name-person">PAVLO MATVIIENKO</div>
               </div>
             </div>
             <div className="card__side card__side_back_red">
@@ -134,18 +124,12 @@ export default function ImageSwiper() {
               <p className="card__side__number">XXXX XXXX XXXX XXXX</p>
               <div className="flex__2">
                 <p className="card__side__other-numbers card__side__other-numbers_1">
-                  XX/XX
+                  MM/YY
                 </p>
                 <p className="card__side__other-numbers card__side__other-numbers_2">
                   XXX
                 </p>
-
-                <div className="card__side__debit">debit</div>
               </div>
-              <p className="card__side__other-info">
-                BANK.UA | 0 800 205 205 |. ЛІЦЕНЗІЯ НБУ №92 ВІД 20.01.1994 | PCE
-                PC100650 WORLD DEBIT
-              </p>
             </div>
           </div>
         </SwiperSlide>
