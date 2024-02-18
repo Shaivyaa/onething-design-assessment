@@ -11,7 +11,8 @@ export default function ContentSection() {
         <div className={styles.content_section_container}>
           <div className={styles.content_section_header}>
             The Freedom to Create
-            <br /> The Credit Card You Want
+            <br />
+            <span> The Credit Card You Want </span>
           </div>
           <div className={styles.content_section_description}>
             <div className={styles.text}>
@@ -24,7 +25,7 @@ export default function ContentSection() {
               Your OneSync Credit Card stays true to you, year after year. It’s
               the only card you&apos;ll ever need.
             </div>
-            <div className={styles.btn_text_container}>
+            <button className={styles.btn_text_container}>
               <div className={styles.btn_text}>Get Started</div>
               <Image
                 src={rightArrow}
@@ -32,7 +33,7 @@ export default function ContentSection() {
                 width={24}
                 height={24}
               />
-            </div>
+            </button>
           </div>
 
           <div className={styles.dropdown}>

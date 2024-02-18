@@ -11,3 +11,17 @@ $high: 980px;
     max-width: 184px;
   }
 }
+.swiper_img:hover {
+  animation: rotBGimg 3s linear infinite;
+  transition: all 0.2s linear;
+}
+
+@keyframes rotBGimg {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

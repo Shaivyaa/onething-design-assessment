@@ -73,8 +73,18 @@ $high: 980px;
   font-size: 40px;
   font-weight: 500;
   color: $black-color;
+  
 }
 
+.form_header:hover p::before {
+  width: 100%;
+}
+
+.form_header:hover {
+  transform: translateX(4px);
+  color: $lightblue-bg-color;
+  cursor: pointer;
+}
 .form_subheader {
   font-size: 24px;
   font-weight: 400;

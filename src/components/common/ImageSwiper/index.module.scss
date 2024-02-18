@@ -11,3 +11,7 @@ $high: 980px;
     max-width: 100%;
   }
 }
+
+.swiper_img:hover {
+  transform: rotateX(180deg) rotateZ(-180deg);
+}

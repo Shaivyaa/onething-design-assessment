@@ -85,22 +85,59 @@ $high: 980px;
 }
 
 .btn_text_container {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  position: relative;
+    // margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
   cursor: pointer;
+  display: flex;
+  }
 
+.btn_text_container:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #b1dae7;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
 }
 
-.btn_text {
+.btn_text_container .btn_text {
+  position: relative;
   color: $white-color;
   font-size: 20px;
   font-weight: 500;
-  text-decoration: underline;
-
-  &:hover {
-    color: $darkpurple-color;
+  width: fit-content;
   }
+    .btn_text_container img {
+      position: relative;
+      top: 0;
+      margin-left: 10px;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke: #234567;
+      stroke-width: 2;
+      transform: translateX(-5px);
+      transition: all 0.3s ease;
+  }
+    .btn_text_container:hover:before {
+      width: 40%;
+      background: #b1dae7;
+    }
+  
+    .btn_text_container:hover img {
+      transform: translateX(0);
+    }
+  
+    .btn_text_container:active {
+      transform: scale(0.95);
 }
 
 .dropdown {
@@ -108,5 +145,89 @@ $high: 980px;
 
   @media screen and (max-width: $medium) {
     display: contents;
+  }
+}
+.content_section_header {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.content_section_header:first-of-type {
+  /* For increasing performance 
+                       ID/Class should've been used. 
+                       For a small demo 
+                       it's okaish for now */
+  animation: showup 3s infinite;
+}
+
+.content_section_header:last-of-type {
+  width: 0px;
+  animation: reveal 3s infinite;
+}
+
+.content_section_header:last-of-type span {
+  margin-left: -355px;
+  animation: slidein 3s infinite;
+}
+
+@keyframes showup {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: -800px;
+  }
+
+  20% {
+    margin-left: -800px;
+  }
+
+  35% {
+    margin-left: 0px;
+  }
+
+  100% {
+    margin-left: 0px;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+
+  20% {
+    opacity: 1;
+    width: 0px;
+  }
+
+  30% {
+    width: 355px;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    width: 355px;
   }
 }

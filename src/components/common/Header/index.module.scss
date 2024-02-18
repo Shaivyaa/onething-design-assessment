@@ -57,22 +57,40 @@ $high: 980px;
 .btn_container {
   transition: all;
   padding: 8px 24px 8px 24px;
-  background-color: $red-bg-color;
-  color: $white-color;
-  font-size: 16px;
   font-weight: 700;
+    height: 40px;
+    background: $red-bg-color;
+  color: $white-color;
+  border: none;
+    border-radius: 4px;
+  font-size: 16px;
   cursor: pointer;
-  outline: none;
-  border-radius: 4px;
-  height: 40px;
-  border: 2px solid $red-bg-color;
+  position: relative;
+    z-index: 1;
+    overflow: hidden;
 }
 
 .btn_container:hover {
-  background-color: $white-bg-color;
-  border: 2px solid $red-bg-color;
   color: $red-color;
-  outline: none;
+}
+
+.btn_container:after {
+  content: "";
+  background: white;
+  position: absolute;
+  z-index: -1;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 0.5s;
+}
+
+.btn_container:hover:after {
+  transform: skewX(-45deg) scale(1, 1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .msite_header_container {
@@ -86,11 +104,13 @@ $high: 980px;
   align-items: center;
   width: 100%;
   background-color: $white-bg-color;
+  
 
   @media screen and (min-width: $medium) {
     display: none;
   }
 }
+
 
 .logo_container {
   cursor: pointer;

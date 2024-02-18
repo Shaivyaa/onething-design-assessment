@@ -60,6 +60,7 @@ $high: 980px;
   font-size: 48px;
   font-weight: 500;
   color: $black-color;
+  animation: 1s anim-flipX ease infinite;
 
   @media screen and (max-width: $high) {
     font-size: 32px;
@@ -72,6 +73,23 @@ $high: 980px;
   }
 }
 
+@keyframes anim-flipX {
+  0% {
+    opacity: 0;
+    transform: rotateX(90def);
+  }
+
+  50% {
+    opacity: 1;
+    transform: rotateX(720deg);
+  }
+
+  100% {
+    /* animate nothing to pause animation at the end */
+    opacity: 1;
+    transform: rotateX(720deg);
+  }
+}
 .hero_section_subheader {
   font-size: 20px;
   font-weight: 400;
@@ -88,26 +106,45 @@ $high: 980px;
   }
 }
 
+
 .btn_container {
-  border-radius: 30px;
-  padding: 8px 40px;
-  height: 43px;
-  cursor: pointer;
-  color: $white-color;
-  background-color: $red-bg-color;
   transition: all;
+    padding: 8px 40px;
+    font-weight: 500;
+    height: 43px;
+    background: $red-bg-color;
+  color: $white-color;
   border: none;
-  outline: none;
+    border-radius: 30px;
   font-size: 18px;
-  font-weight: 500;
-  margin-top: 8px;
+  cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin-top: 8px;
 }
 
 .btn_container:hover {
-  background-color: $white-bg-color;
-  border: 2px solid $red-bg-color;
   color: $red-color;
-  outline: none;
+}
+
+.btn_container:after {
+  content: "";
+  background: white;
+  position: absolute;
+  z-index: -1;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 0.5s;
+}
+
+.btn_container:hover:after {
+  transform: skewX(-45deg) scale(1, 1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .hero_section_image img {

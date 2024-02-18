@@ -52,26 +52,44 @@ $high: 980px;
 }
 
 .btn_container {
-  border-radius: 30px;
-  padding: 8px 40px;
-  height: 43px;
-  cursor: pointer;
-  color: $white-color;
-  background-color: $lightblue-bg-color;
   transition: all;
-  border: none;
-  outline: none;
-  font-size: 18px;
+  padding: 8px 40px;
   font-weight: 500;
+  height: 43px;
+  background: $lightblue-bg-color;
+  color: $white-color;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
   margin-top: 48px;
 }
-
 .btn_container:hover {
-  background-color: $white-bg-color;
-  border: 2px solid $lightblue-bg-color;
   color: $lightblue-bg-color;
-  outline: none;
 }
+
+.btn_container:after {
+  content: "";
+  background: white;
+  position: absolute;
+  z-index: -1;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 0.5s;
+}
+
+.btn_container:hover:after {
+  transform: skewX(-45deg) scale(1, 1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
 
 .footer_links_container {
   border-top: 1px solid $white-color;
@@ -98,6 +116,7 @@ $high: 980px;
 }
 
 .link_text {
+  transition: all ease 0.3s;
   font-size: 16px;
   font-weight: 500;
   color: $white-color;

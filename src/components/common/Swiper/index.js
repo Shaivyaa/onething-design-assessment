@@ -14,11 +14,12 @@ export default function Swipeer() {
   return (
     <>
       <Swiper
-        effect="coverflow"
         slidesPerView={1.7}
+        effect="coverflow"
         coverflowEffect={{
           slideShadows: false,
         }}
+        grabCursor={true}
         spaceBetween={20}
         autoplay={true}
         modules={[Autoplay, EffectCoverflow]}
