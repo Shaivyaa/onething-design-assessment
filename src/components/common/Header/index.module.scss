@@ -112,6 +112,7 @@ $high: 980px;
 }
 
 
+
 .logo_container {
   cursor: pointer;
 }
@@ -192,6 +193,7 @@ $high: 980px;
   transform: rotate(180deg);
 }
 
+
 .content {
   display: flex;
   margin-top: 0;
@@ -200,4 +202,24 @@ $high: 980px;
   justify-content: center;
   align-items: center;
   padding-top: 115px;
+}
+
+.msite_header_container::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+  z-index: -1;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.msite_header_container:hover::before {
+  width: 100%;
+}
+
+.card:hover {
+  box-shadow: none;
 }

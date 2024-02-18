@@ -15,3 +15,10 @@ $high: 980px;
 .swiper_img:hover {
   transform: rotateX(180deg) rotateZ(-180deg);
 }
+.swiper-slide .swiper-slide-active {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25px;
+}

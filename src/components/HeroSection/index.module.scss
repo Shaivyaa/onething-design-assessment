@@ -60,7 +60,7 @@ $high: 980px;
   font-size: 48px;
   font-weight: 500;
   color: $black-color;
-  animation: 1s anim-flipX ease infinite;
+  animation: 2s anim-flipX ease infinite;
 
   @media screen and (max-width: $high) {
     font-size: 32px;
@@ -76,7 +76,7 @@ $high: 980px;
 @keyframes anim-flipX {
   0% {
     opacity: 0;
-    transform: rotateX(90def);
+    transform: rotateX(90deg);
   }
 
   50% {
