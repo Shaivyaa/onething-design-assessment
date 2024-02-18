@@ -41,6 +41,11 @@ a {
   margin-top: 20px;
   position: relative;
   perspective: 800px;
+@media screen and (max-width: 580px) {
+    height: 148px;
+    width: 237px;
+    margin: 0 auto;
+  }
 }
 
 .card__side {
@@ -143,6 +148,9 @@ a {
   position: relative;
   display: block;
   color: white;
+@media screen and (max-width: 580px) {
+    display: none;
+  }
 }
 
 .card__side__name-person::before {

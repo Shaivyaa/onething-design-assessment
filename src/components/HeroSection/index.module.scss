@@ -65,11 +65,13 @@ $high: 980px;
   @media screen and (max-width: $high) {
     font-size: 32px;
     text-align: center;
+    animation: none;
   }
 
   @media screen and (max-width: $medium) {
     font-size: 32px;
     text-align: center;
+    animation: none;
   }
 }
 

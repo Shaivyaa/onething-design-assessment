@@ -167,14 +167,14 @@ export default function ImageSwiper() {
         </SwiperSlide>
 
         <SwiperSlide>
-          <Image src={card2} alt="card" width={73} height={46} />
+          <Image src={card2} alt="card" width={73} height={43} />
         </SwiperSlide>
         <SwiperSlide>
           <Image src={card} alt="card" width={73} height={46} />
         </SwiperSlide>
 
         <SwiperSlide>
-          <Image src={card2} alt="card" width={73} height={46} />
+          <Image src={card2} alt="card" width={73} height={43} />
         </SwiperSlide>
       </Swiper>
     </>
